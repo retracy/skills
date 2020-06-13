@@ -13,8 +13,8 @@
       "category": "Windows Development",
       "items": [
         ".NET Framework",
-        "C#",
         "WPF",
+        "C#",
         "Nunit"
       ]
     },
