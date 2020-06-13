@@ -1,0 +1,86 @@
+{
+  "technologies": [
+    {
+      "category": "Web Development",
+      "items": [
+        "Typescript",
+        "Angular",
+        "RxJS",
+        "Node.js"
+      ]
+    },
+    {
+      "category": "Windows Development",
+      "items": [
+        ".NET Framework",
+        "WPF",
+        "C#"
+      ]
+    },
+    {
+      "category": "Development Tools",
+      "items": [
+        "Git",
+        "SVN",
+        "Visual Studio",
+        "Visual Studio Code",
+        "Jenkins"
+      ]
+    }
+  ],
+  "degrees": [
+    {
+      "university":"California Polytechnic State University, San Luis Obispo",
+      "degree":0,
+      "major": "Computer Science",
+      "startDate": "1996-08-01T08:00:00.000-09:00",
+      "endDate": "2001-06-01T08:00:00.000-09:00"
+    }
+  ],
+  "jobs": [
+    {
+      "company":  "Grass Valley, A Belden Brand",
+      "city": "Hillsboro, Oregon",
+      "title":  "Senior Software Engineer",
+      "startDate":  "2005-08-01T07:00:00.000-09:00",
+      "duties":  [
+        "Helped to design and develop the Windows-based video production and content management application, called GV STRATUS, using C# and WPF.",
+        "I’m currently working on the web-based version of this application that will run within web browsers and mobile devices using Node.js, Typescript, and Angular.",
+        "Helped to design and develop a configuration and software deployment tool that customers use to commission and update their Grass Valley systems on site.  This tool is also used internally by QA and engineers for maintaining all of their systems",
+        "Worked on adding new features to an application that managed content for our line of video servers."
+      ]
+    },
+    {
+      "company":  "Tektronix, Inc.",
+      "city": "Beaverton, Oregon",
+      "title":  "Software Engineer (Contractor)",
+      "startDate":  "2004-04-01T07:00:00.000-09:00",
+      "endDate":  "2005-07-01T08:00:00.000-09:00",
+      "duties":  [
+        "Worked on the C# Windows-based RF measurement software for the spectrum analyzer product line",
+        "Helped to develop the automated nightly build system using scripting."
+      ]
+    },
+    {
+      "company":  "Agilent Technologies, Inc.",
+      "city": "Santa Rosa, California",
+      "title": "Software Engineer",
+      "startDate": "2000-06-01T07:00:00.000-09:00",
+      "endDate": "2003-03-01T07:00:00.000-09:00",
+      "duties": [
+        "Developed Windows-based applications that create test signals for satellite and cellular base station testing."
+      ]
+    },
+    {
+      "company":  "EducAide Software",
+      "city": "Richmond, California",
+      "title":  "Data Management",
+      "startDate": "1998-06-01T08:00:00.000-09:00",
+      "endDate": "1999-12-01T08:00:00.000-09:00",
+      "duties":  [
+        "Worked on reviewing standardized test questions and adding them into the company’s proprietary database.",
+        "Developed macros to facilitate some of this work."
+      ]
+    }
+  ]
+}
