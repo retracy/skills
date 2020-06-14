@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CVService } from './cv.service';
 import { ICVInfo, DegreeType } from './cv';
+import { Observable } from 'rxjs';
 
 @Component({
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.css'],
-  providers: [CVService]
+  providers: [CVService],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CVComponent implements OnInit {
 
-  cvInfo: ICVInfo;
+  cvInfo$: Observable<ICVInfo>;
   DegreeType = DegreeType;  // Allow template binding to access this enum's string values
   imageSource: string;
 
@@ -22,11 +24,7 @@ export class CVComponent implements OnInit {
   ngOnInit() {
     let name = this._route.snapshot.paramMap.get('name');
     this.imageSource = `./assets/images/${name}.jpg`
-    this._cvService.getCV(name)
-      .subscribe(value => {
-        console.log(value.jobs)
-        this.cvInfo = value;
-      });
+    this.cvInfo$ = this._cvService.getCV(name);
   }
 
 }
