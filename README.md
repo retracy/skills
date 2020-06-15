@@ -22,6 +22,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Deploying an updated version to Git
+
+Run 'npm run deploy' from a Powershell prompt.  This is the only prompt that formulates the base href value correctly.
+
 ## Accessing the Git-hosted website
 
 The following URL can be accessed from any supported browser:  https://retracy.github.io/skills/home
