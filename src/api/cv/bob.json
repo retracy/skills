@@ -54,7 +54,9 @@
       "title": "Staff Software Engineer",
       "startDate": "2018-01-01T07:00:00.000-09:00",
       "duties": [
-        "Develop software for calibration and verification of Head-Up Display systems for commercial aviation. These display systems provide the pilot with vital flight and landing information projected onto their real view of the flight path",
+        "Develop software for Head-Up Display systems for commercial aviation.   These display systems provide pilots with vital aircraft status, and flight and landing information projected directly onto the real view of the flight path.",
+        "Developed software which controls a robot to precisely place optics components using a camera and computer vision software to provide feedback on the component placement.",
+        "Developed image manipulation software used to measure visible light and infrared camera quality and to identify dead pixels in camera sensors.",
         "Encouraged code re-use and improved time-to-market by developing a library of common software modules used for testing Head-Up Display systems for multiple different types of aircraft. This library included software to interface with the avionics communications bus (ARINC 429) and with corporate resources like the calibration database."
       ]
     },
