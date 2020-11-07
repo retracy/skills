@@ -27,7 +27,9 @@
         "Jira",
         "Visual Studio",
         "VSCode",
-        "MATLAB"
+        "MATLAB",
+        "Robot control",
+        "Computer vision"
       ]
     }
   ],
