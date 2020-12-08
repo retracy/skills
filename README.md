@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Deploying an updated version to Git
 
-Run 'npm run deploy' from a Powershell prompt.  This is the only prompt that formulates the base href value correctly.
+Run 'npm run deploy'.  Note that this only use to work from Powershell due to the way that the base href value was formulated.   However, more recently, Bash and Cmd prompts work as well.
 
 ## Accessing the Git-hosted website
 
