@@ -21,7 +21,7 @@ export interface IJobInfo {
 }
 
 export interface ITechnologiesInfo {
-  categorty: string;
+  category: string;
   items: string[];
 }
 

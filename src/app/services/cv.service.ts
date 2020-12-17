@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ICVInfo } from './cv';
+import { ICVInfo } from '../models/models';
 import { Observable } from 'rxjs';
 
 @Injectable()
