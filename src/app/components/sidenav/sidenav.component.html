@@ -7,7 +7,7 @@
       Candidate
     </mat-toolbar>
     <mat-nav-list>
-      <mat-list-item *ngFor="let candidate of candidates | async">
+      <mat-list-item *ngFor="let candidate of candidates$ | async">
         <a matLine [routerLink]="['/skills', candidate.id]">
           <img matListAvatar [src]="candidate.photo" alt="...">
           {{ candidate.name }}

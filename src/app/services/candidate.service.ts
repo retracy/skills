@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Candidate } from '../models/models';
 import { CVService } from './cv.service';
 
@@ -32,7 +32,7 @@ export class CandidateService {
     return of(this.dataStore.candidates);
   }
 
-  candidateById(id: number) {
+  candidateById(id: number): Candidate {
     return this.dataStore.candidates.find(x => x.id == id);
   }
 }

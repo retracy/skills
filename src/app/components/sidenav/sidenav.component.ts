@@ -1,24 +1,24 @@
-import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
+import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatSidenav } from '@angular/material/sidenav';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { Candidate } from 'src/app/models/models';
 import { CandidateService } from 'src/app/services/services';
 
 const SMALL_WIDTH_BREAKPOINT = 720;
 
-
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.scss']
+  styleUrls: ['./sidenav.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidenavComponent implements OnInit {
 
   public isScreenSmall: boolean;
 
-  candidates: Observable<Candidate[]>;
+  candidates$: Observable<Candidate[]>;
   isDarkTheme: boolean = false;
   dir: string = 'ltr';
 
@@ -39,7 +39,7 @@ export class SidenavComponent implements OnInit {
         this.isScreenSmall = state.matches;
       });
 
-      this.candidates = this.candidateService.candidates;
+      this.candidates$ = this.candidateService.candidates;
 
       this.router.events.subscribe(() => {
         if (this.isScreenSmall) {
