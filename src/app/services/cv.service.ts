@@ -1,7 +1,8 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ICVInfo } from './cv';
 import { Observable } from 'rxjs';
+
+import { ICVInfo } from '../models/models';
 
 @Injectable()
 export class CVService {
