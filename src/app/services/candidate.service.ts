@@ -15,14 +15,14 @@ export class CandidateService {
     this.dataStore.candidates.push({
       id: 1,
       name: "Bob Tracy",
-      photo: "../assets/images/bob.jpg",
+      photo: "assets/images/bob.jpg",
       title: "Staff Software Engineer",
       cvInfo: cvService.getCV('bob')
-    }, 
+    },
     {
       id: 2,
       name: "Emily Tracy",
-      photo: "../assets/images/emily.jpg",
+      photo: "assets/images/emily.jpg",
       title: "Staff Software Engineer",
       cvInfo: cvService.getCV('emily')
     });
