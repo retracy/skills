@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
-  { path: 'skills', loadChildren: () => import('./components/skills.module').then(m => m.SkillsModule)},
-  {path: '**', redirectTo: 'skills'}
+  { path: 'home', loadChildren: () => import('./components/skills.module').then(m => m.SkillsModule)},
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

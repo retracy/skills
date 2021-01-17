@@ -1,6 +1,6 @@
-<mat-sidenav-container class="app-sidenav-container" 
+<mat-sidenav-container class="app-sidenav-container"
                       [class.dark-theme]="isDarkTheme" [dir]="dir">
-  <mat-sidenav #sidenav class="app-sidenav mat-elevation-z10" 
+  <mat-sidenav #sidenav class="app-sidenav mat-elevation-z10"
               [opened]="!isScreenSmall"
               [mode]="isScreenSmall ? 'over' : 'side'">
     <mat-toolbar color="primary">
@@ -8,7 +8,7 @@
     </mat-toolbar>
     <mat-nav-list>
       <mat-list-item *ngFor="let candidate of candidates$ | async">
-        <a matLine [routerLink]="['/skills', candidate.id]">
+        <a matLine [routerLink]="['/home', candidate.id]">
           <img matListAvatar [src]="candidate.photo" alt="...">
           {{ candidate.name }}
         </a>
