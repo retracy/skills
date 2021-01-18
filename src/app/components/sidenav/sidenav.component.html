@@ -1,5 +1,5 @@
 <mat-sidenav-container class="app-sidenav-container" [class.dark-theme]="isDarkTheme" [dir]="dir">
-  <mat-sidenav #sidenav class="app-sidenav mat-elevation-z10" [opened]="!(isScreenSmall$ | async)"
+  <mat-sidenav #sidenav class="app-sidenav mat-elevation-z10" [opened]="(isScreenSmall$ | async) === false"
     [mode]="(isScreenSmall$ | async) ? 'over' : 'side'">
     <mat-toolbar color="primary">
       Candidate
@@ -13,7 +13,6 @@
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
-
   <div class="app-sidenav-content">
     <app-toolbar (toggleTheme)="toggleTheme()" (toggleSidenav)="sidenav.toggle()">
     </app-toolbar>
@@ -21,5 +20,4 @@
       <router-outlet></router-outlet>
     </div>
   </div>
-
 </mat-sidenav-container>
