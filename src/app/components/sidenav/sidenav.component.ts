@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
-import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { BreakpointObserver } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Candidate } from 'src/app/models/models';
 import { CandidateService } from 'src/app/services/services';
 
@@ -14,9 +15,9 @@ const SMALL_WIDTH_BREAKPOINT = 720;
   styleUrls: ['./sidenav.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SidenavComponent implements OnInit {
+export class SidenavComponent {
 
-  public isScreenSmall: boolean;
+  public isScreenSmall$: Observable<boolean>;
 
   candidates$: Observable<Candidate[]>;
   isDarkTheme: boolean = false;
@@ -24,27 +25,25 @@ export class SidenavComponent implements OnInit {
 
   constructor(private breakpointObserver: BreakpointObserver,
     private candidateService: CandidateService,
-    private router: Router) { }
+    private router: Router) {
+    this.isScreenSmall$ = this.breakpointObserver
+      .observe([`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`])
+      .pipe(
+        map(state => state.matches)
+      );
+
+    this.candidates$ = this.candidateService.candidates;
+
+    this.isScreenSmall$.subscribe(val => {
+      if (val && this.sidenav) {
+        this.sidenav.close();
+      }
+    });
+  }
 
   @ViewChild(MatSidenav) sidenav: MatSidenav;
 
   toggleTheme() {
     this.isDarkTheme = !this.isDarkTheme;
   }
-
-  ngOnInit(): void {
-    this.breakpointObserver
-      .observe([`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`])
-      .subscribe((state: BreakpointState) => {
-        this.isScreenSmall = state.matches;
-      });
-
-      this.candidates$ = this.candidateService.candidates;
-
-      this.router.events.subscribe(() => {
-        if (this.isScreenSmall) {
-          this.sidenav.close();
-        }
-      });  
-    }
 }

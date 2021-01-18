@@ -22,7 +22,10 @@ export class MainContentComponent {
     private service: CandidateService,
     private sanitizer: DomSanitizer
   ) {
-    this.candidate$ = this.route.params.pipe(map(p => this.service.candidateById(p.id ? p.id : 1)));
+    this.candidate$ = this.route.params
+    .pipe(
+      map(p => this.service.candidateById(p.id ? p.id : 1))
+    );
   }
 
   getPhotoImage(candidate: Candidate): SafeResourceUrl {
