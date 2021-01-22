@@ -14,16 +14,16 @@ export class CandidateService {
     this.dataStore = { candidates: [] };
     this.dataStore.candidates.push({
       id: 1,
-      name: "Bob Tracy",
-      photo: "assets/images/bob.jpg",
-      title: "Staff Software Engineer",
+      name: 'Bob Tracy',
+      photo: 'assets/images/bob.jpg',
+      title: 'Staff Software Engineer',
       cvInfo: cvService.getCV('bob')
     },
     {
       id: 2,
-      name: "Emily Tracy",
-      photo: "assets/images/emily.jpg",
-      title: "Staff Software Engineer",
+      name: 'Emily Tracy',
+      photo: 'assets/images/emily.jpg',
+      title: 'Staff Software Engineer',
       cvInfo: cvService.getCV('emily')
     });
   }
