@@ -1,56 +1,54 @@
-<div *ngIf="candidate$ | async as candidate">
-  <mat-card class="skill-card">
-    <mat-card-header>
-      <div mat-card-avatar [style.background-image]="getPhotoImage(candidate)" style="background-size: cover"></div>
-      <mat-card-title>{{candidate.name}}</mat-card-title>
-      <mat-card-subtitle>{{candidate.title}}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <mat-tab-group>
-        <div *ngIf="candidate.cvInfo | async as cvInfo">
-          <mat-tab label="Technologies">
-            <mat-list>
-              <div *ngFor="let technology of cvInfo.technologies; last as isLast">
-                <div mat-subheader>{{technology.category}}</div>
-                <mat-list-item>
-                  <p mat-line>{{technology.items| join: ', '}}</p>
-                </mat-list-item>
-                <mat-divider *ngIf="!isLast"></mat-divider>
-              </div>
-            </mat-list>
-          </mat-tab>
-          <mat-tab label="Experience">
-            <mat-list>
-              <div *ngFor="let job of cvInfo.jobs; last as isLast">
-                <div mat-subheader>{{job.company}}</div>
-                <mat-list-item>
-                  <p mat-line>{{job.title}}</p>
-                  <div mat-line>
-                    <p class="edu-dates">{{job.startDate | date: 'MMM yyyy'}} - {{job.endDate ? (job.endDate | date: 'MMM yyyy') :
-                      'Present'}}</p>
-                  </div>
-                  <div mat-line *ngFor='let duty of job.duties'>
-                    <p>{{duty}}</p>
-                  </div>
-                </mat-list-item>
-                <mat-divider *ngIf="!isLast"></mat-divider>
-              </div>
-            </mat-list>
-          </mat-tab>
-          <mat-tab label="Education">
-            <mat-list>
-              <div *ngFor="let degree of cvInfo.degrees; last as isLast">
-                <div mat-subheader>{{degree.university}}</div>
-                <mat-list-item>
-                  <p mat-line>{{DegreeType[degree.degree]}} - {{degree.major}}</p>
-                  <p mat-line class="edu-dates">{{degree.startDate | date: 'MMM yyyy'}} - {{degree.endDate | date: 'MMM yyyy'}}</p>
-                </mat-list-item>
-                <mat-divider *ngIf="!isLast"></mat-divider>
-              </div>
-            </mat-list>
-          </mat-tab>
-        </div>
-      </mat-tab-group>
-    </mat-card-content>
-  </mat-card>
-</div>
+<mat-card *ngIf="candidate$ | async as candidate">
+  <mat-card-header>
+    <div mat-card-avatar [style.background-image]="getPhotoImage(candidate)" style="background-size: cover"></div>
+    <mat-card-title>{{candidate.name}}</mat-card-title>
+    <mat-card-subtitle>{{candidate.title}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-tab-group>
+      <div *ngIf="candidate.cvInfo | async as cvInfo">
+        <mat-tab label="Technologies">
+          <mat-list>
+            <div *ngFor="let technology of cvInfo.technologies; last as isLast">
+              <div mat-subheader>{{technology.category}}</div>
+              <mat-list-item>
+                <p mat-line>{{technology.items| join: ', '}}</p>
+              </mat-list-item>
+              <mat-divider *ngIf="!isLast"></mat-divider>
+            </div>
+          </mat-list>
+        </mat-tab>
+        <mat-tab label="Experience">
+          <mat-list>
+            <div *ngFor="let job of cvInfo.jobs; last as isLast">
+              <div mat-subheader>{{job.company}}</div>
+              <mat-list-item>
+                <p mat-line>{{job.title}}</p>
+                <div mat-line>
+                  <p class="edu-dates">{{job.startDate | date: 'MMM yyyy'}} - {{job.endDate ? (job.endDate | date: 'MMM yyyy') :
+                    'Present'}}</p>
+                </div>
+                <div mat-line *ngFor='let duty of job.duties'>
+                  <p>{{duty}}</p>
+                </div>
+              </mat-list-item>
+              <mat-divider *ngIf="!isLast"></mat-divider>
+            </div>
+          </mat-list>
+        </mat-tab>
+        <mat-tab label="Education">
+          <mat-list>
+            <div *ngFor="let degree of cvInfo.degrees; last as isLast">
+              <div mat-subheader>{{degree.university}}</div>
+              <mat-list-item>
+                <p mat-line>{{DegreeType[degree.degree]}} - {{degree.major}}</p>
+                <p mat-line class="edu-dates">{{degree.startDate | date: 'MMM yyyy'}} - {{degree.endDate | date: 'MMM yyyy'}}</p>
+              </mat-list-item>
+              <mat-divider *ngIf="!isLast"></mat-divider>
+            </div>
+          </mat-list>
+        </mat-tab>
+      </div>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>

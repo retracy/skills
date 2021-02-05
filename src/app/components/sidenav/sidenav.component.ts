@@ -18,6 +18,7 @@ const SMALL_WIDTH_BREAKPOINT = 720;
 export class SidenavComponent {
 
   public isScreenSmall$: Observable<boolean>;
+  private isScreenSmall: boolean = false;
 
   candidates$: Observable<Candidate[]>;
   isDarkTheme: boolean = false;
@@ -26,15 +27,23 @@ export class SidenavComponent {
   constructor(private breakpointObserver: BreakpointObserver,
     private candidateService: CandidateService,
     private router: Router) {
+
     this.isScreenSmall$ = this.breakpointObserver
       .observe([`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`])
       .pipe(
         map(state => state.matches)
       );
 
+    this.router.events.subscribe(() => {
+      if (this.isScreenSmall) {
+        this.sidenav.close();
+      }
+    });
+
     this.candidates$ = this.candidateService.candidates;
 
     this.isScreenSmall$.subscribe(val => {
+      this.isScreenSmall = val;
       if (val && this.sidenav) {
         this.sidenav.close();
       }

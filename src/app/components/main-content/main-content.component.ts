@@ -7,7 +7,6 @@ import { DegreeType, Candidate } from 'src/app/models/models';
 import { CandidateService } from 'src/app/services/services';
 
 @Component({
-  selector: 'app-main-content',
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
