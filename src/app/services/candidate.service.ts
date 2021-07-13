@@ -13,14 +13,14 @@ export class CandidateService {
   constructor(private cvService: CVService) {
     this.dataStore = { candidates: [] };
     this.dataStore.candidates.push({
-      id: 1,
+      id: 'bob',
       name: 'Bob Tracy',
       photo: 'assets/images/bob.jpg',
       title: 'Staff Software Engineer',
       cvInfo: cvService.getCV('bob')
     },
     {
-      id: 2,
+      id: 'emily',
       name: 'Emily Tracy',
       photo: 'assets/images/emily.jpg',
       title: 'Staff Software Engineer',
@@ -32,7 +32,7 @@ export class CandidateService {
     return of(this.dataStore.candidates);
   }
 
-  candidateById(id: number): Candidate {
+  candidateById(id: string): Candidate {
     return this.dataStore.candidates.find(x => x.id == id);
   }
 }

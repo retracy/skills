@@ -2,7 +2,7 @@ import { Observable } from 'rxjs';
 import { ICVInfo } from './cv';
 
 export class Candidate {
-    id: number;
+    id: string;
     name: string;
     photo: string;
     title: string;

@@ -6,7 +6,6 @@
         "TypeScript",
         "Angular",
         "RxJS",
-        "Node.js",
         "HTML5/CSS"
       ]
     },
@@ -15,17 +14,19 @@
       "items": [
         ".NET Framework",
         "WPF",
+        "MVVM",
         "C#"
       ]
     },
     {
       "category": "Development Tools",
       "items": [
-        "Git",
-        "SVN",
+        "VS Code",
         "Visual Studio",
-        "Visual Studio Code",
-        "Jenkins"
+        "Git",
+        "Gitflow",
+        "Chrome and Edge DevTools",
+        "Fiddler"
       ]
     }
   ],
@@ -34,8 +35,8 @@
       "university":"California Polytechnic State University, San Luis Obispo",
       "degree":0,
       "major": "Computer Science",
-      "startDate": "1996-08-01T08:00:00.000-09:00",
-      "endDate": "2001-06-01T08:00:00.000-09:00"
+      "startDate": "1996-09-01T08:00:00.000-09:00",
+      "endDate": "2000-12-01T08:00:00.000-09:00"
     }
   ],
   "jobs": [
@@ -45,10 +46,12 @@
       "title":  "Staff Software Engineer",
       "startDate":  "2005-08-01T07:00:00.000-09:00",
       "duties":  [
+        "Lead front-end web developer for GV AMPP Asset Management, a next generation cloud-based platform that facilitates media asset management and remote production for the video broadcast industry.",
+        "Helped to design and develop the UI for managing, updating, displaying, and searching across assets and asset metadata.",
+        "Worked on the core UI framework which was developed using TypeScript and Angular and was designed to run within a cloud-based microservice architecture.",
         "Helped to design and develop the Windows-based video production and content management application, called GV STRATUS, using C# and WPF.",
-        "I’m currently working on the web-based version of this application that will run within web browsers and mobile devices using Node.js, Typescript, and Angular.",
-        "Helped to design and develop a configuration and software deployment tool that customers use to commission and update their Grass Valley systems on site.  This tool is also used internally by QA and engineers for maintaining all of their systems",
-        "Worked on adding new features to an application that managed content for our line of video servers."
+        "Participated in the design and development of a configuration and software deployment tool that on-site personnel use to commission and update customers' Grass Valley systems.",
+        "Worked on adding new features to an application that managed content for Grass Valley's line of video servers."
       ]
     },
     {
