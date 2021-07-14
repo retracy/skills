@@ -16,7 +16,7 @@ export class CandidateService {
       id: 'bob',
       name: 'Bob Tracy',
       photo: 'assets/images/bob.jpg',
-      title: 'Staff Software Engineer',
+      title: 'Principal Software Engineer',
       cvInfo: cvService.getCV('bob')
     },
     {
