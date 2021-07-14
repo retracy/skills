@@ -23,7 +23,7 @@ export class MainContentComponent {
   ) {
     this.candidate$ = this.route.params
     .pipe(
-      map(p => this.service.candidateById(p.id ? p.id : 1))
+      map(p => this.service.candidateById(p.id ? p.id : 'bob'))
     );
   }
 
