@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
-  constructor(private title: Title) { }
+  constructor(public title: Title) { }
 
   ngOnInit() {
     this.title.setTitle(`Our Skills ${VERSION.full}`)
