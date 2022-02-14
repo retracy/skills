@@ -1,0 +1,117 @@
+{
+  "technologies": [
+    {
+      "category": "Web Development",
+      "items": [
+        "TypeScript",
+        "Angular",
+        "RESTful services",
+        "JavaScript"
+      ]
+    },
+    {
+      "category": "Windows Development",
+      "items": [
+        ".NET Framework",
+        "WPF",
+        "C#",
+        "Nunit"
+      ]
+    },
+    {
+      "category": "General",
+      "items": [
+        "Python",
+        "C/C++",
+        "Git",
+        "Jira",
+        "Visual Studio",
+        "VSCode",
+        "MATLAB",
+        "Robot control",
+        "Computer vision"
+      ]
+    }
+  ],
+  "degrees": [
+    {
+      "university":"University of Illinois at Urbana-Champaign",
+      "degree":1,
+      "major": "Electrical Engineering",
+      "startDate": "1986-01-01T08:00:00.000Z",
+      "endDate": "1989-12-01T08:00:00.000Z"
+    },
+    {
+      "university":"University of Illinois at Urbana-Champaign",
+      "degree":0,
+      "major": "Electrical Engineering",
+      "startDate": "1981-08-01T07:00:00.000-09:00",
+      "endDate": "1985-05-01T07:00:00.000-09:00"
+    }
+  ],
+  "jobs": [
+    {
+      "company":  "Collins Aerospace",
+      "city": "Wilsonville, Oregon",
+      "title": "Principal Software Engineer",
+      "startDate": "2018-01-01T07:00:00.000-09:00",
+      "duties": [
+        "Develop software for Head-Up Display systems for commercial aviation.   These display systems provide pilots with vital aircraft status, and flight and landing information projected directly onto the real view of the flight path.",
+        "Developed software which controls a robot to precisely place optics components using a camera and computer vision software to provide feedback on the component placement.",
+        "Developed image manipulation software used to measure visible light and infrared camera quality and to identify dead pixels in camera sensors.",
+        "Encouraged code re-use and improved time-to-market by developing a library of common software modules used for testing Head-Up Display systems for multiple different types of aircraft. This library included software to interface with the avionics communications bus (ARINC 429) and with corporate resources like the calibration database."
+      ]
+    },
+    {
+      "company":  "Tektronix, Inc.",
+      "city": "Beaverton, Oregon",
+      "title": "Senior Software Engineer",
+      "startDate": "2004-01-01T07:00:00.000-09:00",
+      "endDate": "2017-12-01T07:00:00.000-09:00",
+      "duties": [
+        "Designed WPF GUI for signal source product line.",
+        "Software architect for RF signal generator client/server application using WCF.",
+        "Developed C# GUI and RF measurement software for spectrum analyzer product line.  Helped to guide the software team as they began development of instrument application software using Microsoft’s .NET framework.  This involved development of interop code to communicate with DSP libraries and legacy components.  Developed optimized C# graphics routines to meet demanding performance criteria for data display.",
+        "Assisted in the development of Perl script to perform automated nightly build and regression tests.",
+        "Developed InstallShield installer for the spectrum analyzer application."
+      ]
+    },
+    {
+      "company":  "Agilent Technologies",
+      "city": "Santa Rosa, California",
+      "title": "Software Engineer",
+      "startDate": "1995-10-01T07:00:00.000-09:00",
+      "endDate": "2003-03-01T07:00:00.000-09:00",
+      "duties": [
+        "Developed C++ and C# DSP algorithms for commercial applications to create nearly distortion-free signals for testing communications satellites and cellular base station multi-channel power amplifiers using Agilent RF and microwave signal sources.  These algorithms included automated FIR filter generation and application as well as error correction for IQ mismatch.  MATLAB was used extensively to prototype the solution and to analyze intermediate results.",
+        "Worked with a small team of engineers and software developers to create a system for testing wireless communication networks using MFC and COM. Developed tools to post-process test data from a SQL database and export to a map or spreadsheet.",
+        "Developed embedded C++ software to control Agilent spectrum analyzers.  Designed FIR filters to conform to CISPR standards and also developed software modules for real-time FIR filter application.  Developed code to control power-up and instrument preset state.",
+        "Participated with a large team to develop a national spectrum monitoring system.  Was responsible for the COM components of the system as well as the instrument control software."
+      ]
+    },
+    {
+      "company":  "Intergraph Corporation",
+      "city": "Huntsville, Alabama",
+      "title": "Software Engineer",
+      "startDate": "1990-06-01T07:00:00.000-09:00",
+      "endDate": "1995-09-01T07:00:00.000-09:00",
+      "duties": [
+        "Served as an internal consultant to the electronics division and later to the entire company on programming issues related to software development on Windows NT and Windows 95.",
+        "Converted the existing user interface of the EDA CAD system from an internal graphics environment to X Windows.",
+        "Developed tools for the design of high-speed digital circuits including software modules used to ensure correct transmission-line behavior."
+      ]
+    },
+    {
+      "company": "Electronic Decisions, Inc.",
+      "city": "Urbana, Illinois",
+      "title": "Software Engineer",
+      "startDate": "1984-08-01T07:00:00.000-09:00",
+      "endDate": "1990-03-01T07:00:00.000-09:00",
+      "duties": [
+        "Developed algorithm and DSP software to correct for non-linearity in FIR filter coefficients in acoustic charge transport (ACT) signal processing devices.  This also required the development of ATE software to gather the calibration data used for this correction as well as driver software to control the signal processing device.",
+        "Developed digital signal processing modules, such as FIR filter design, for a commercial engineering data analysis and acquisition software package.",
+        "Performed testing and layout of RF signal processing devices."
+      ]
+    }
+  ]
+}
