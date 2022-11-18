@@ -43,6 +43,15 @@
   ],
   "jobs": [
     {
+      "company":  "Cisco",
+      "city": "Remote",
+      "title":  "Senior UI Engineer",
+      "startDate":  "2022-10-04T07:00:00.000-09:00",
+      "duties":  [
+        "Core Enablement Engineering"
+      ]
+    },
+    {
       "company":  "Grass Valley",
       "city": "Hillsboro, Oregon",
       "title":  "Staff Software Engineer",

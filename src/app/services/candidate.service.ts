@@ -16,14 +16,14 @@ export class CandidateService {
       id: 'bob',
       name: 'Bob Tracy',
       photo: 'assets/images/bob.jpg',
-      title: 'Principal Software Engineer',
+      title: 'Senior Principal Software Engineer',
       cvInfo: cvService.getCV('bob')
     },
     {
       id: 'emily',
       name: 'Emily Tracy',
       photo: 'assets/images/emily.jpg',
-      title: 'Staff Software Engineer',
+      title: 'Senior UI Engineer',
       cvInfo: cvService.getCV('emily')
     });
   }
