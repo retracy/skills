@@ -1,41 +1,44 @@
 {
   "technologies": [
     {
-      "category": "Web Development",
+      "category": "Web Technologies",
       "items": [
         "TypeScript",
         "Angular",
         "RxJS",
         "NgRx",
         "CSS/SCSS",
-        "HTML5"
-      ]
-    },
-    {
-      "category": "Windows Development",
-      "items": [
-        ".NET Framework",
-        "WPF",
-        "MVVM",
-        "C#"
+        "HTML5",
+        "Jest"
       ]
     },
     {
       "category": "Development Tools",
       "items": [
         "VS Code",
-        "Visual Studio",
+        "CircleCI",
+        "Nx",
+        "Chrome and Edge DevTools",
         "Git",
         "Gitflow",
-        "Chrome and Edge DevTools",
-        "Fiddler"
+        "Fiddler",
+        "Visual Studio"
+      ]
+    },
+    {
+      "category": "Windows Technologies",
+      "items": [
+        ".NET Framework",
+        "WPF",
+        "MVVM",
+        "C#"
       ]
     }
   ],
   "degrees": [
     {
-      "university":"California Polytechnic State University, San Luis Obispo",
-      "degree":0,
+      "university": "California Polytechnic State University, San Luis Obispo",
+      "degree": 0,
       "major": "Computer Science",
       "startDate": "1996-09-01T08:00:00.000-09:00",
       "endDate": "2000-12-01T08:00:00.000-09:00"
@@ -43,12 +46,25 @@
   ],
   "jobs": [
     {
-      "company":  "Grass Valley",
+      "company": "Cisco",
+      "city": "Remote",
+      "title": "Senior UI Engineer",
+      "startDate": "2022-10-04T07:00:00.000-09:00",
+      "duties": [
+        "Member of the core Developer Experience team supporting the front end development teams within Cisco's Customer & Partner Experience (CPX) organization.",
+        "Developed an analytics dashboard from the ground up, using the latest in Angular technologies and best practices, to report developer code metrics that promote better code quality for the front end development teams and to provide insights and metrics at a high level for management.",
+        "Designed the analytics dashboard to leverage the tooling and structure from Nx, the Router and Component Stores from NgRx, Angular's new standalone API, and the ability to parse the AST via linting.",
+        "Employed best practices for using shared/common components, layouts, and styling, and for writing unit and component tests such that the analytics dashboard can serve as a reference app for the organization.",
+        "Integrated the analytics dashboard into the same build and deployment pipelines within CircleCI that the other front end applications use."
+      ]
+    },
+    {
+      "company": "Grass Valley",
       "city": "Hillsboro, Oregon",
-      "title":  "Staff Software Engineer",
-      "startDate":  "2005-08-01T07:00:00.000-09:00",
+      "title": "Staff Software Engineer",
+      "startDate": "2005-08-01T07:00:00.000-09:00",
       "endDate": "2021-07-01T07:00:00.000-09:00",
-      "duties":  [
+      "duties": [
         "Lead front-end web developer for GV AMPP Asset Management, a next generation cloud-based platform that facilitates media asset management and remote production for the video broadcast industry.",
         "Helped to design and develop the UI for managing, updating, displaying, and searching across assets and asset metadata.",
         "Worked on the core UI framework which was developed using TypeScript and Angular and was designed to run within a cloud-based microservice architecture.",
@@ -58,18 +74,18 @@
       ]
     },
     {
-      "company":  "Tektronix, Inc.",
+      "company": "Tektronix, Inc.",
       "city": "Beaverton, Oregon",
-      "title":  "Software Engineer (Contractor)",
-      "startDate":  "2004-04-01T07:00:00.000-09:00",
-      "endDate":  "2005-07-01T08:00:00.000-09:00",
-      "duties":  [
+      "title": "Software Engineer (Contractor)",
+      "startDate": "2004-04-01T07:00:00.000-09:00",
+      "endDate": "2005-07-01T08:00:00.000-09:00",
+      "duties": [
         "Worked on the C# Windows-based RF measurement software for the spectrum analyzer product line",
         "Helped to develop the automated nightly build system using scripting."
       ]
     },
     {
-      "company":  "Agilent Technologies, Inc.",
+      "company": "Agilent Technologies, Inc.",
       "city": "Santa Rosa, California",
       "title": "Software Engineer",
       "startDate": "2000-06-01T07:00:00.000-09:00",
@@ -80,12 +96,12 @@
       ]
     },
     {
-      "company":  "EducAide Software",
+      "company": "EducAide Software",
       "city": "Richmond, California",
-      "title":  "Data Management",
+      "title": "Data Management",
       "startDate": "1998-06-01T08:00:00.000-09:00",
       "endDate": "1999-12-01T08:00:00.000-09:00",
-      "duties":  [
+      "duties": [
         "Worked on reviewing standardized test questions and adding them into the company’s proprietary database.",
         "Developed macros to facilitate some of this work."
       ]
